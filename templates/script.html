@@ -1,0 +1,27 @@
+{% load static %}
+<script type="text/javascript" src="{% static 'js/jquery-3.4.1.min.js' %}"></script>
+<!-- Bootstrap tooltips -->
+<script type="text/javascript" src="{% static 'js/popper.min.js' %}"></script>
+<!-- Bootstrap core JavaScript -->
+<script type="text/javascript" src="{% static 'js/bootstrap.min.js' %}"></script>
+<!-- MDB core JavaScript -->
+<script type="text/javascript" src="{% static 'js/mdb.min.js' %}"></script>
+<!-- Initializations -->
+<script type="text/javascript">
+  // Animations initialization
+  new WOW().init();
+</script>
+
+<!-- delete manage-address -->
+<script type="text/javascript">
+$(document).on('click', '.confirm-delete', function(){
+    return confirm('Are you sure you want to delete this?');
+})
+</script>
+
+<!-- cancel order popup -->
+<script type="text/javascript">
+  $(document).on('click', '.confirm-cancel', function(){
+      return confirm('Are you sure you want to cancel this order?');
+  })
+  </script>
